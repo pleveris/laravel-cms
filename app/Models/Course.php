@@ -10,7 +10,7 @@ class Course extends Model
 {
     use HasFactory;
     protected $fillable = [
-        'title', 'description', 'start_date', 'end_date', 'status',
+        'title', 'description', 'start_date', 'end_date', 'user_id', 'status',
     ];
 
     public function folders()
@@ -22,5 +22,4 @@ class Course extends Model
     {
         return $this->hasMany(Enrolment::class);
     }
-
 }
