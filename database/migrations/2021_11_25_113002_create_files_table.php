@@ -17,7 +17,7 @@ class CreateFilesTable extends Migration
             $table->id();
             $table->foreignId('user_id')->constrained();
             $table->foreignId('folder_id')->constrained();
-            $table->string('location');
+            $table->string('title');
             $table->timestamps();
         });
     }
