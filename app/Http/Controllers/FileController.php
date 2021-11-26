@@ -38,7 +38,7 @@ class FileController extends Controller
 
         $file = File::create([
             'user_id' => auth()->user()->id,
-            'folder_id' => $request->ffolder_id,
+            'folder_id' => $request->folder_id,
             'title' => $request->title
         ]);
 
